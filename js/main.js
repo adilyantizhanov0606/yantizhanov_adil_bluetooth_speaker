@@ -6,22 +6,22 @@
     {
       title: 'Speaker Drivers',
       text: 'Delivers clear and balanced sound for an enjoyable listening experience.',
-      image: 'images/speaker.svg'
+      image: 'images/equalizer.svg'
     },
     {
       title: 'Connection button',
       text: 'Press to activate Bluetooth pairing mode and connect your device wirelessly.',
-      image: 'images/power-button.svg'
+      image: 'images/bluetooth.svg'
     },
     {
       title: 'Equalizer',
       text: 'Adjusts audio frequencies to customize the sound and enhance your listening experience.',
-      image: 'images/usb-c-charging.svg'
+      image: 'images/speaker-high.svg'
     },
     {
       title: 'Turn on/off button',
       text: 'Press to turn the speaker on or off.',
-      image: 'images/anti-slip-pads.svg'
+      image: 'images/power.svg'
     },
   ]
 
