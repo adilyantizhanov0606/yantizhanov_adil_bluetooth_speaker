@@ -2,8 +2,8 @@ model-viewer {
   width: auto;
   max-width: 1200px;
   height: 700px;
-  background-color: #ffffff;
-  margin: 0 auto;
+  background-color: #ffff;
+  padding: 50px;
 }
 
 .Hotspot {
@@ -37,7 +37,7 @@ opacity: 0;
   background: #FF0000;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  color: rgba(255, 255, 255, 0.8);
+  color:#ffffff;
   display: block;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 20px;

@@ -8,9 +8,22 @@
     <link href="css/main.css" rel="stylesheet"/>
   </head>
   <body>
+    <div class="grid-con">
+        <header class="col-span-full" id="main-header">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
     <div class="grid-con center-grid-con">
-      <section class="col-span-full">
-        <h2 class="visually-hidden">Bluetooth Speaker</h2>
+      <h2>hhhhd</h2>
+      <section class="col-span-full ar-model">
+        <h2 class="visually-hidden">DR Sound AR Model</h2>
         <model-viewer src="model/bluetooth-speaker.glb" camera-controls tone-mapping="neutral" shadow-intensity="1.31" exposure="1.2" camera-orbit="134.5deg 70.25deg 80.56m" field-of-view="30deg">
               <button class="Hotspot" slot="hotspot-1" data-position="-3.437272295011528m 1.2212499135803818m 0.38426337185028653m" data-normal="0.9717366920616508m 0.03886019871023304m 0.23284691592821613m" data-visibility-attribute="visible">
                   <div class="HotspotAnnotation" id="hotspot-1">
@@ -31,6 +44,7 @@
             </model-viewer>  
       </section> 
     </div>
+  </main>
   <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
