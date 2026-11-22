@@ -1,6 +1,43 @@
 (() => {
 
   //variables
+   const canvas = document.querySelector("#explode-view");
+    const context = canvas.getContext("2d");
+
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+    const frameCount = 443; 
+    const images = [];
+
+
+    const buds = {
+        frame: 0
+    };
+
+    for(let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        //images/explode_dynamicNumber.webp
+        img.src = `images/render_2_${(i + 1).toString().padStart(4, '0')}.png`;
+        images.push(img);
+    };
+
+      gsap.to(buds, {
+          frame: frameCount - 1,
+          ease: "none",
+          snap: "frame",
+          scrollTrigger: {
+              trigger: "#explode-view",
+              pin: true,
+              start: "top top",
+              markers: true,
+              scrub: 1
+          },
+          onUpdate: render
+      });
+
+
+
   const hotspots = document.querySelectorAll(".Hotspot");
   const infoBoxes = [
     {
@@ -26,6 +63,15 @@
   ]
 
   //functions
+
+   images[0].addEventListener("load", render);
+
+    function render() {
+        context.clearRect(0,0, canvas.width, canvas.height);
+        //console.log(buds.frame);
+        //console.log(images[buds.frame]);
+        context.drawImage(images[buds.frame], 0, 0);
+    }
 
   function loadInfo() {
     infoBoxes.forEach((infoBox, index) => {
