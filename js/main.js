@@ -4,10 +4,10 @@
    const canvas = document.querySelector("#explode-view");
     const context = canvas.getContext("2d");
 
-    canvas.width = 1920;
-    canvas.height = 1080;
+    canvas.width = 1280;
+    canvas.height = 720;
 
-    const frameCount = 443; 
+    const frameCount = 443 ; 
     const images = [];
 
 
@@ -27,10 +27,9 @@
           ease: "none",
           snap: "frame",
           scrollTrigger: {
-              trigger: "#explode-view",
+              trigger: ".exploded-view",
               pin: true,
               start: "top top",
-              markers: true,
               scrub: 1
           },
           onUpdate: render

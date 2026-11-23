@@ -1,5 +1,14 @@
+ .exploded_view {
+   width: 100%;
+   max-width: 1200px;
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+   padding: 0;
+ }
+
  #explode-view {
-    max-width: 200%;
-    /* width: 100vw; */
-    align-self: center;
-  }
+  display: block;
+  width: 100%;
+  height: auto;
+ }
