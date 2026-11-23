@@ -23,14 +23,16 @@
     };
 
       gsap.to(buds, {
-          frame: frameCount - 1,
+          frame: 421,
           ease: "none",
           snap: "frame",
           scrollTrigger: {
               trigger: ".exploded-view",
               pin: true,
-              start: "top top",
-              scrub: 1
+              start: "1% 80%",
+              end: "bottom 50%",
+              scrub: 2,
+              markers:true
           },
           onUpdate: render
       });
