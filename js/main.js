@@ -28,11 +28,10 @@
           snap: "frame",
           scrollTrigger: {
               trigger: ".exploded-view",
-              pin: true,
-              start: "1% 80%",
-              end: "bottom 50%",
-              scrub: 2,
-              markers:true
+              pin: "#explode-view",
+              start: "center center",
+              end: "+=3000",
+              scrub: 1,
           },
           onUpdate: render
       });
