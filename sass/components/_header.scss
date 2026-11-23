@@ -1,26 +1,11 @@
 #main-header {
     background-color:#c50f0f;
-    top:0;
-    margin:0;
-    padding:10px; 
-    left: 0;
-    right: 0;
-    margin-bottom: 100px;
-    z-index:1;
 
     ul {
         list-style: none;
         padding: 0;
         display: flex;
         justify-content: center;
-    }
-
-    ul li {
-        margin-right: 20px;
-    }
-
-    ul li:last-child {
-        margin-right: 0px;
     }
 
     ul li a {
