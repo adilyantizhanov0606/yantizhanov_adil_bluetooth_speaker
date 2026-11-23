@@ -1,0 +1,19 @@
+#main-header {
+    background-color:#c50f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
